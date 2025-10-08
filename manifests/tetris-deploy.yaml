@@ -8,14 +8,14 @@ spec:
   replicas: 2 # You can adjust the number of replicas as needed
   selector:
     matchLabels:
-      app: iron
+      app: tetris
   template:
     metadata:
       labels:
-        app: iron
+        app: tetris
     spec:
       containers:
-        - name: iron
-          image: iron/images # Replace with the actual image tag
+        - name: tetris
+          image: nasi101/tetris # Replace with the actual image tag
           ports:
             - containerPort: 80 # Replace with the port your Tetris game listens on
